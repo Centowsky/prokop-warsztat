@@ -1,0 +1,102 @@
+@import "../../config/config.scss";
+
+@import "../../config/config.scss";
+
+header {
+  background-image: url("../../../assets/images/header/background.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $header-primary-color;
+}
+
+.header-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+
+  @media (min-width: 576px) {
+    display: block;
+  }
+}
+
+.header-menu ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: $header-background-color;
+
+  li {
+    text-align: center; /* Wyśrodkowanie tekstu */
+    padding: 0 1rem;
+    text-transform: uppercase;
+    font-family: $header-menu-font;
+    font-weight: 200;
+    border-bottom: 2px solid transparent;
+    transition: 1s;
+  }
+
+  li:hover {
+    border-bottom: 2px solid $header-primary-color;
+    transform: translateX(0.5rem);
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  display: block;
+
+  @media (min-width: 576px) {
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 3rem;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 4rem;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 5rem;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  display: block;
+
+  @media (min-width: 576px) {
+    font-size: 1.8rem;
+    letter-spacing: 0.3rem;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 2.5rem;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 3rem;
+  }
+}
