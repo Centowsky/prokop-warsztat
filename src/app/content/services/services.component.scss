@@ -1,0 +1,50 @@
+@import "../../config/config.scss";
+
+.services {
+  padding: 2rem 1rem;
+
+  ul {
+    list-style: square;
+    list-style-position: inside;
+  }
+
+  li {
+    padding-left: 1rem;
+  }
+
+  li::marker {
+    color: $secondary-color;
+  }
+
+  .list-header {
+    color: $secondary-color;
+    font-weight: 700;
+    margin-top: 3rem;
+    font-size: 1.75rem;
+  }
+
+  .box-description {
+    padding: 0.2rem 0.25rem;
+    font-size: 1.2rem;
+    text-align: justify;
+    @media (min-width: 576px) {
+      padding: 0.25rem 2rem;
+    }
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: $headers-font;
+    letter-spacing: 0.1rem;
+    text-align: center;
+
+    @media (min-width: 576px) {
+      text-align: right;
+    }
+  }
+
+  img {
+    width: 75%;
+  }
+}

@@ -5,6 +5,7 @@ import { AboutComponent } from './content/about/about.component';
 import { HeaderComponent } from './content/header/header.component';
 import { NavbarComponent } from './content/navbar/navbar.component';
 import { StepsComponent } from './content/steps/steps.component';
+import { ServicesComponent } from './content/services/services.component';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,7 @@ import { StepsComponent } from './content/steps/steps.component';
     FontAwesomeModule,
     AboutComponent,
     StepsComponent,
+    ServicesComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],

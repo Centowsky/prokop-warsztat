@@ -1,0 +1,24 @@
+<div class="services">
+  <h1>Skorzystaj z naszych usług</h1>
+  <div class="box flex flex-col md:flex-row flex-wrap">
+    <div class="box-description md:basis-1/2">
+      <p>
+        Oferujemy szeroki zakres usług naprawczych, które obejmują diagnostykę
+        komputerową, naprawy silników, układów hamulcowych, zawieszenia oraz
+        wiele innych. Nasz zespół doświadczonych mechaników zadba o kompleksową
+        obsługę Twojego pojazdu, gwarantując jego sprawność i bezpieczeństwo na
+        drodze.
+      </p>
+      <h2 class="list-header">Czym się zajmujemy?</h2>
+      <ul>
+        <li *ngFor="let services of services">{{ services.name }}</li>
+      </ul>
+    </div>
+    <div class="box-image md:basis-1/2 flex justify-center md:justify-end">
+      <img
+        src="../../../assets/images/services/uslugi.jpg"
+        alt="Naprawa samochodu"
+      />
+    </div>
+  </div>
+</div>
