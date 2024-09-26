@@ -1,0 +1,9 @@
+<div class="steps flex flex-wrap gap-2 justify-between">
+  <div *ngFor="let step of steps" class="step flex flex-row gap-4 items-center">
+    <div class="number">{{ step.number }}</div>
+    <div class="step-info">
+      <h3>{{ step.title }}</h3>
+      <p>{{ step.description }}</p>
+    </div>
+  </div>
+</div>
