@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
 
 * {
   box-sizing: border-box;
@@ -8,8 +9,9 @@
 
 //COLORS
 $primary-color: #262e38;
-
+$secondary-color: #f04a3f;
 //FONTS
+$headers-font: "Sriracha", cursive;
 
 //HEADER
 $header-primary-color: #fff;
@@ -20,3 +22,5 @@ $header-background-color: rgba(38, 46, 56, 0.4);
 $navbar-background-color: rgba(38, 46, 56, 1);
 $navbar-background-secondary-color: rgb(48, 55, 63);
 $navbar-secondary-color: #f04a3f;
+
+//ABOUT
