@@ -6,6 +6,8 @@ import { HeaderComponent } from './content/header/header.component';
 import { NavbarComponent } from './content/navbar/navbar.component';
 import { StepsComponent } from './content/steps/steps.component';
 import { ServicesComponent } from './content/services/services.component';
+import { PhotoGalleryComponent } from './content/contact/contact.component';
+import { WebAdrressComponent } from './content/web-adrress/web-adrress.component';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +20,8 @@ import { ServicesComponent } from './content/services/services.component';
     AboutComponent,
     StepsComponent,
     ServicesComponent,
+    PhotoGalleryComponent,
+    WebAdrressComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],

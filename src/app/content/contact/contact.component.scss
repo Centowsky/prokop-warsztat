@@ -1,0 +1,17 @@
+@import "../../config/config.scss";
+
+.contact {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+
+.info {
+  padding: 1rem;
+}
+
+h2 {
+  font-family: $headers-font;
+  font-size: 2rem;
+  font-weight: 600;
+}

@@ -1,0 +1,23 @@
+@import "../../config/config.scss";
+
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1rem;
+  border-top: 1px solid $line-color;
+  border-bottom: 1px solid $line-color;
+  font-weight: 700;
+  font-size: 1.5rem;
+  -webkit-box-shadow: 0px 9px 46px -12px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 9px 46px -12px rgba(66, 68, 90, 1);
+  box-shadow: 0px 9px 46px -12px rgba(66, 68, 90, 1);
+  background-color: $navbar-background-secondary-color;
+  color: $secondary-color;
+  font-family: $header-menu-font;
+
+  @media (min-width: 576px) {
+    font-size: 3rem;
+    margin: 4rem 0;
+    padding: 2rem;
+  }
+}

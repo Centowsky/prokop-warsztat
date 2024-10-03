@@ -1,0 +1,32 @@
+@import "../../../config/config.scss";
+
+div img {
+  @apply transition-opacity duration-700 ease-in-out;
+}
+
+.img-button {
+  background-color: $secondary-color;
+}
+
+.active {
+  background-color: $primary-color;
+}
+
+.image-slider {
+  background-color: $header-background-color;
+  -webkit-box-shadow: 4px 4px 40px 0px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 4px 4px 40px 0px rgba(66, 68, 90, 1);
+  box-shadow: 4px 4px 40px 0px rgba(66, 68, 90, 1);
+}
+
+.action-button {
+  color: $secondary-color;
+  font-size: 5rem;
+  padding: 0.5rem;
+  transition: 0.5s;
+  font-weight: 700;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
