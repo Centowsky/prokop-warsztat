@@ -6,7 +6,7 @@
     class="max-w-screen-xl flex flex-wrap items-center justify-around lg:justify-between company"
   >
     <a
-      href="#"
+      href="http://www.autodiagnozabarlinek.pl/"
       class="flex items-center space-x-3 rtl:space-x-reverse company-name"
     >
       <img
@@ -19,7 +19,9 @@
       class="flex md:order-2 space-x-40 md:space-x-0 rtl:space-x-reverse company-right-menu"
     >
       <button type="button" class="phone">
-        <fa-icon [icon]="faPhone"></fa-icon> Zadzwoń
+        <a href="tel:+48 662 524 714"
+          ><fa-icon [icon]="faPhone"></fa-icon> Zadzwoń</a
+        >
       </button>
       <button
         (click)="toggleMenu()"
@@ -53,16 +55,21 @@
     >
       <ul class="flex flex-col rtl:space-x-reverse md:flex-row menu-list">
         <li>
-          <a href="#" class="block" aria-current="page">Strona główna</a>
+          <a
+            href="http://www.autodiagnozabarlinek.pl/"
+            class="block"
+            aria-current="page"
+            >Strona główna</a
+          >
         </li>
         <li>
-          <a href="#" class="block">O firmie</a>
+          <a (click)="scrollToId('about')" class="block">O firmie</a>
         </li>
         <li>
-          <a href="#" class="block">Usługi</a>
+          <a (click)="scrollToId('services')" class="block">Usługi</a>
         </li>
         <li>
-          <a href="#" class="bloc">Kontakt</a>
+          <a (click)="scrollToId('contact')" class="block">Kontakt</a>
         </li>
       </ul>
     </div>

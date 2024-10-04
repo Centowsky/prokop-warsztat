@@ -8,6 +8,15 @@
 
 .info {
   padding: 1rem;
+
+  p {
+    transition: 0.5s;
+  }
+
+  p:hover {
+    color: $secondary-color;
+    transform: translateX(0.25rem);
+  }
 }
 
 h2 {

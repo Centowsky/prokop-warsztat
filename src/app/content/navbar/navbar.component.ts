@@ -2,6 +2,7 @@ import { Component, HostListener } from '@angular/core';
 import { NgIf, NgClass } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { ScrollService } from '../../../services/scroll.services';
 
 @Component({
   selector: 'app-navbar',
@@ -11,6 +12,12 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
+  constructor(private scrollService: ScrollService) {}
+
+  scrollToId(id: string) {
+    this.scrollService.scrollToElementById(id);
+  }
+
   faPhone = faPhone;
 
   isMenuOpen = false;
