@@ -1,3 +1,5 @@
+@import "../../../config/config.scss";
+
 @keyframes scrollAnimation {
   0% {
     transform: translateY(0);
@@ -17,4 +19,9 @@ fa-icon {
   padding: 1rem;
   font-size: 3rem;
   animation: scrollAnimation 2s infinite;
+  transition: 0.5s;
+
+  &:hover {
+    color: $secondary-color;
+  }
 }
