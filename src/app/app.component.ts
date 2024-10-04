@@ -8,6 +8,7 @@ import { StepsComponent } from './content/steps/steps.component';
 import { ServicesComponent } from './content/services/services.component';
 import { PhotoGalleryComponent } from './content/contact/contact.component';
 import { WebAdrressComponent } from './content/web-adrress/web-adrress.component';
+import { FooterComponent } from './content/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -22,6 +23,7 @@ import { WebAdrressComponent } from './content/web-adrress/web-adrress.component
     ServicesComponent,
     PhotoGalleryComponent,
     WebAdrressComponent,
+    FooterComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],

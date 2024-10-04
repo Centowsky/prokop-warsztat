@@ -1,0 +1,17 @@
+@import "../../config/config.scss";
+
+.footer {
+  text-align: center;
+  color: #fff;
+  background-color: $navbar-background-color;
+  padding: 0.25rem;
+  text-transform: uppercase;
+  font-family: $headers-font;
+  font-size: 0.75rem;
+
+  span,
+  a {
+    color: $secondary-color;
+    font-weight: 700;
+  }
+}
