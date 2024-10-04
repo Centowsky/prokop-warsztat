@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ScrollDownComponent } from '../buttons/scroll-down/scroll-down.component';
+import { ScrollService } from '../../../services/scroll.services';
 
 @Component({
   selector: 'app-header',
@@ -8,4 +9,10 @@ import { ScrollDownComponent } from '../buttons/scroll-down/scroll-down.componen
   styleUrl: './header.component.scss',
   imports: [ScrollDownComponent],
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  constructor(private scrollService: ScrollService) {}
+
+  scrollToId(id: string) {
+    this.scrollService.scrollToElementById(id);
+  }
+}

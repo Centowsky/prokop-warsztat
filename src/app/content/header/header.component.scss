@@ -43,8 +43,9 @@ header {
   }
 
   li:hover {
-    border-bottom: 2px solid $header-primary-color;
+    border-bottom: 2px solid $secondary-color;
     transform: translateX(0.5rem);
+    cursor: pointer;
   }
 }
 
